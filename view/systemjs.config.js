@@ -10,7 +10,8 @@
     'app':                        'app', // 'dist',
     'rxjs':                       'node_modules/rxjs',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
-    '@angular':                   'node_modules/@angular'
+    'angular2-jwt':               'node_modules/angular2-jwt/angular2-jwt.js',
+    '@angular':                   'node_modules/@angular',
   };
 
   // packages tells the System loader how to load when no filename and/or no extension
@@ -18,6 +19,7 @@
     'app':                        { main: 'main.js',  defaultExtension: 'js' },
     'rxjs':                       { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { defaultExtension: 'js' },
+    'angular2-jwt':               { defaultExtension: 'js' },
   };
 
   var packageNames = [
