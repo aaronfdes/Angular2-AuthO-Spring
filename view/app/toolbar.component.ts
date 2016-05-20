@@ -10,10 +10,15 @@ import {AuthService} from './AuthService.service';
     <div class="toolbar">
       <button *ngIf="!auth.loggedIn()" (click)="auth.login()">Login</button>
       <button *ngIf="auth.loggedIn()" (click)="auth.logout()">Logout</button>
+      <div *ngIf="auth.loggedIn()">
+        Welcome {{auth.getUser()}}
+      </div>
     </div>
   `,
   providers:[AuthService]
 })
 export class ToolbarComponent {
+
   constructor(private auth: AuthService) {}
+
 }
