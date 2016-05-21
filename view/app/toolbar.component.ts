@@ -14,8 +14,7 @@ import {AuthService} from './AuthService.service';
         Welcome {{auth.getUser()}}
       </div>
     </div>
-  `,
-  providers:[AuthService]
+  `
 })
 export class ToolbarComponent {
 
